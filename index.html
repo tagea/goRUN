@@ -9,50 +9,152 @@
 <body>
   <header class="main-header">
     <div class="polygon-left">
-       <svg xmlns="http://www.w3.org/2000/svg" class="polygon-left-svg" viewBox="0 0 480 255">
+     <svg xmlns="http://www.w3.org/2000/svg" width='0' height='0'>
         <defs>
-          <pattern id="img1" patternUnits="userSpaceOnUse" width="100%" height="100%">
-            <image xlink:href="img/jenny-hill.jpg" x="0" y="0" width="100%" height="100%" />
-          </pattern>
+          <clipPath id='clip-heade-left' clipPathUnits='objectBoundingBox' >
+            <path d="M0.9479,1H0V0.3638L0.4296,0.0988,0.9166,0.5528S0.7944,0.6633,0.8315,0.8282C0.8571,0.9420,0.9479,1,0.9479,1Z"/>
+          </clipPath>
         </defs>
-        <polygon points="0 93.0 95.0 0 480.0 255.0 0 255 0 93" fill="url(#img1)"/></svg>
+      </svg>
+      <img src="img/adventure-athlete.jpg" alt="" class="polygon__img">
     </div>
      <div class="header-text">
          <div class="collection-name collection-name_rot90"><span class="bold">spring 2018</span> lookbook</div>
          <div class="sub-title"><span class="bold">sports</span><br> authority</div>
           <h1 class="main-h1"><div class="h_medium">&#8226;&nbsp;go&nbsp;&#8226;</div>run<div class="h_small">with authority</div></h1>
           <div class="round-img round-img_bg1">
-          <blockquote class="cite"> <span class="cite__line1">It's supposed to be hard</span><span class="cite__line2">the hard is what makes it</span><span class="cite__line3">great</span></blockquote></div>
+          <blockquote class="cite cite_absilute"> <span class="cite__line1">It's supposed to be hard</span><span class="cite__line2">the hard is what makes it</span><span class="cite__line3">great</span></blockquote></div>
      </div>
-     <div class="polygon-right"></div>
+     <div class="polygon-right">
+       <svg xmlns="http://www.w3.org/2000/svg" width='0' height='0'>
+        <defs>
+          <clipPath id='clip-heade-right' clipPathUnits='objectBoundingBox'>
+              <polygon points="0 0, 1 0, 1 0.5, 0.7 1, 0.7 1, 0 0"></polygon> 
+          </clipPath>
+        </defs>
+      </svg>
+        <img src="img/quino-al.jpg" alt="" class="polygon__img"> 
+     </div>
   </header>
   <section class="section-products">
       <div class="block-products">
           <header class="section-header">
-              <h2 class="main-h2">
-                  <div class="h_small">it's just</div>you <div class="h_small">and the</div> pavement
-              </h2>
+                  <h2 class="main-h2">
+                      <div class="h_small">it's just</div>you <div class="h_small">and the</div> pavement
+                  </h2>
+                  <svg xmlns="http://www.w3.org/2000/svg" width='0' height='0'>
+                    <defs>
+                      <clipPath id='clip-section-header' clipPathUnits='objectBoundingBox'>
+                          <polygon points="0 0, 0.3 1, 1 1, 0.7 0"></polygon> 
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="front-transform"></div>
           </header>
           <div class="products">
+             <div class="collection-name"><span class="bold">2018 running</span>  product highlights</div>
+             <div class="product__arrows">
+                 <span class="product__left-arow"></span>
+                 <span class="product__right-arow"></span>
+             </div>
               <ul class="products__list">
-                  <li class="products__item"></li>
-                  <li class="products__item"></li>
-                  <li class="products__item"></li>
-                  <li class="products__item"></li>
+                  <li class="products__item">
+                      <a href="" class="product__link"><img src="img/product1.jpeg" class="product__img" alt=""></a>
+                      <div class="product__descr">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                      <div class="product__buttons">
+                          <div class="product__price">$49.99</div>
+                          <a href="" class="product__view-link">view</a>
+                      </div>
+                  </li>
+                  <li class="products__item">
+                      <a href="" class="product__link"><img src="img/product2.jpeg" class="product__img" alt=""></a>
+                      <div class="product__descr">Lorem ipsum dolor sit amet, consectetur.</div>
+                      <div class="product__buttons">
+                          <div class="product__price">$169.99</div>
+                          <a href="" class="product__view-link">view</a>
+                      </div>
+                  </li>
+                  <li class="products__item">
+                      <a href="" class="product__link"><img src="img/product3.jpg" class="product__img" alt=""></a>
+                      <div class="product__descr">Lorem ipsum dolor sit amet.</div>
+                      <div class="product__buttons">
+                          <div class="product__price">$79.99</div>
+                          <a href="" class="product__view-link">view</a>
+                      </div>
+                  </li>
+                  <li class="products__item">
+                      <a href="" class="product__link"><img src="img/product4.jpg" class="product__img" alt=""></a>
+                      <div class="product__descr">Lorem ipsumet, consectetur adipisicing.</div>
+                      <div class="product__buttons">
+                          <div class="product__price">$59.99</div>
+                          <a href="" class="product__view-link">view</a>
+                      </div>
+                  </li>
               </ul>
+              <ul class="bullet__list">
+                  <li class="bullet__item bullet__item_active"></li>
+                  <li class="bullet__item"></li>
+                  <li class="bullet__item"></li>
+                  <li class="bullet__item"></li>
+                  <li class="bullet__item"></li>
+              </ul>
+              <a href="#" title="browse all 2018 running products" class="products__browseall">
+                  browse all 2018 running products
+              </a>
           </div>
       </div>
   </section>
   <section class="section-motivation">
-      <h1 class="main-h1">train</h1>
+     <div class="block-motivation">
+       <div class="polygon-motivation-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width='0' height='0'>
+                <defs>
+                  <clipPath id='clip-motovation-left' clipPathUnits='objectBoundingBox'>
+                     <path d="M0,0.0035V0.9572H1c-0.0753-0.0990-0.0882-0.1926-0.0481-0.2815Z"/>
+                      <!--<polygon points="0 0, 0 0.9580, 1 0.9580, 0.9929 0.9507, 0.9843 0.9404, 0.9772 0.9315, 0.9691 0.9212, 0.9615 0.9091, 0.9548 0.8993, 0.9476 0.8854, 0.9418 0.8720, 0.9373 0.8572, 0.9329 0.8420, 0.9307 0.8281, 0.9275 0.8138, 0.9266 0.7990, 0.9266 0.7843, 0.9262 0.7686, 0.9271 0.7556, 0.9289 0.7418, 0.9324 0.7265, 0.9373 0.7096, 0.9427 0.6948, 0.9459 0.6831, 0.9499 0.6769, 0 0"></polygon>-->
+                  </clipPath>
+                </defs>
+             </svg>  
+         </div>
+         <div class="header-text">
+              <h1 class="main-h1"><div class="h_medium">&#8226;&nbsp;go&nbsp;&#8226;</div>train<div class="h_small">with authority</div></h1>
+              <div class="round-img round-img_bg2 round-img_right"></div>
+         </div>
+         <div class="polygon-motivation-right">
+             <svg xmlns="http://www.w3.org/2000/svg" width='0' height='0'>
+                <defs>
+                  <clipPath id='clip-motovation-right' clipPathUnits='objectBoundingBox'>
+                     <path d="M0.0043,0.5601,0.8616,0.0039V1H0.1776C0.2507,0.7917,0.1912,0.6459,0.0043,0.5601Z"/>
+                      <!--<polygon points="0.1687 1, 1 1, 1 0, 0 0.5607, 0.0086 0.5645, 0.0148 0.5676, 0.0214 0.5707, 0.0283 0.5738, 0.0353 0.5770, 0.0426 0.5804, 0.0495 0.5839, 0.0568 0.5880, 0.0619 0.5915, 0.0679 0.5953, 0.0741 0.5991, 0.0796 0.6033, 0.0859 0.6068, 0.0925 0.6126, 0.0983 0.6178, 0.1035 0.6230, 0.1094 0.6279, 0.1150 0.6338, 0.1212 0.6397, 0.1268 0.6455, 0.1319 0.6521, 0.1361 0.6570, 0.1406 0.6622, 0.1441 0.6670, 0.1479 0.6719, 0.1520 0.6774, 0.1559 0.6844, 0.1610 0.6909, 0.1649 0.6993, 0.1700 0.7093, 0.1735 0.7176, 0.1791 0.7294, 0.1832 0.7374, 0.1863 0.7474, 0.1884 0.7540, 0.1908 0.7623, 0.1929 0.7689, 0.1950 0.7751, 0.1971 0.7849, 0.2006 0.7959, 0.2016 0.8063, 0.2030 0.8167, 0.2037 0.8303, 0.2044 0.8403, 0.2047 0.8517, 0.2044 0.8621, 0.2044 0.8742, 0.2033 0.8864, 0.2013 0.8995, 0.1992 0.9093, 0.1961 0.9304, 0.1929 0.9456, 0.1884 0.9609, 0.1825 0.9744, 0.1746 0.9907, 0.1687 1"></polygon>-->
+                  </clipPath>
+                </defs>
+             </svg>
+         </div>
+     </div>
   </section>
   <section class="section-reviews">
       <div class="block-reviews">
-          
+         <div class="review-clipimg">
+            <svg xmlns="http://www.w3.org/2000/svg" width='0' height='0'>
+                <defs>
+                  <clipPath id='clip-review' clipPathUnits='objectBoundingBox'>
+                      <polygon points="0 0, 1 0, 0.5 1, 0 0"></polygon> 
+                  </clipPath>
+                </defs>
+            </svg>
+            <img src="img/william-stitt.jpg" class="review-img" alt="">
+          </div>
+          <div class="review-text">
+              <blockquote class="cite"> <span class="cite__line1">Look at yourself in the mirror</span><span class="cite__line2">there before you is your</span><span class="cite__line3">competition</span></blockquote>
+          </div>
       </div>
   </section>
   <footer>
-      
+     <div class="footer">
+          <div class="footer-h_light">whatever it is you do</div>
+            <div class="footer-h_medium">go do what you</div>
+            <div class="footer-h_large">love</div>
+     </div>
   </footer>
 </body>
 </html>
