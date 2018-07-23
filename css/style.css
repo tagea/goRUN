@@ -18,54 +18,120 @@ a:hover {
   flex-flow: row;
   justify-content: space-between;
   position: relative;
+  max-height: 600px;
 }
 .polygon-left {
+  flex: 0 0 40%;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
+  -webkit-clip-path: url(#clip-heade-left);
+  clip-path: url(#clip-heade-left);
+}
+.polygon-right {
+  flex: 0 0 33.33333333%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  -webkit-clip-path: url(#clip-heade-right);
+  clip-path: url(#clip-heade-right);
 }
 .header-text {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-.section-products {
+.block-products {
   display: flex;
   flex-flow: column;
   align-items: center;
   padding: 60px 0;
 }
+.products {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .section-header {
-  flex: 0 0 auto;
-  background-color: #bcbcbc;
+  width: 800px;
+  padding: 0px 30px;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.block-motivation {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.polygon-motivation-left {
+  flex: 0 0 33.33333333%;
+  background-image: url(../img/action-dawn.jpg);
+  background-size: cover;
+  -webkit-clip-path: url(#clip-motovation-left);
+  clip-path: url(#clip-motovation-left);
+}
+.polygon-motivation-right {
+  flex: 0 0 33.33333333%;
+  background-image: url(../img/kate-trysh.jpg);
+  background-size: cover;
+  -webkit-clip-path: url(#clip-motovation-right);
+  clip-path: url(#clip-motovation-right);
+}
+.block-reviews {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+.footer {
+  background-image: url(../img/back4.jpg), url(../img/back3.jpg), url(../img/back2.jpg), url(../img/back1.jpg), url(../img/back5.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top left,bottom left,center, bottom right, top right;
+  background-size: 25%,25%,50%,25%,25%;
+  background-color: #000;
+  padding: 80px 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
 }
 /* COMMON STYLE*/
 .bold {
   font-weight: bold;
 }
 /* COMPONENTS*/
-.polygon-left-svg {
-  width: 600px;
+.polygon__img {
+  max-width: 100%;
+  height: auto;
 }
 .main-h1 {
   text-transform: uppercase;
   font-size: 8em;
   letter-spacing: 0.01em;
   text-align: center;
-  line-height: 0.6em;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 .main-h2 {
   text-transform: uppercase;
   font-size: 4em;
   text-align: center;
+  width: 220px;
+  line-height: 1em;
+  word-wrap: break-word;
+  margin: 30px 0;
 }
 .h_small,
 .h_medium {
   font-family: 'PT Serif', serif;
   font-weight: 400;
   letter-spacing: 0.08em;
+  line-height: 0.8em;
 }
 .h_small {
   font-size: 0.8rem;
@@ -75,11 +141,12 @@ a:hover {
 }
 .collection-name {
   font-family: 'PT Serif', serif;
-  position: absolute;
-  left: 40px;
   font-size: 0.9em;
+  margin-right: auto;
 }
 .collection-name_rot90 {
+  position: absolute;
+  left: 40px;
   top: 100px;
   transform: rotate(-90deg);
 }
@@ -96,21 +163,29 @@ a:hover {
 }
 .round-img {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 8px solid rgba(224, 224, 224, 0.63);
-}
-.round-img_bg1 {
-  background-image: url(../img/clem-onojeghuo.jpg);
   background-position: center;
   background-size: cover;
 }
-.cite {
-  font-family: 'PT Serif', serif;
+.round-img_bg1 {
+  background-image: url(../img/clem-onojeghuo.jpg);
+}
+.round-img_bg2 {
+  background-image: url(../img/mark-jefferson.jpg);
+}
+.round-img_right {
+  left: 120px;
+}
+.cite_absilute {
   position: absolute;
   left: 250px;
   top: 30px;
+}
+.cite {
+  font-family: 'PT Serif', serif;
   margin: 0;
   min-width: 220px;
   font-style: italic;
@@ -135,16 +210,136 @@ a:hover {
   text-align: right;
   font-size: 2.4rem;
 }
+.cite .cite__line3:after {
+  content: close-quote;
+  display: block;
+  text-align: center;
+  font-size: 0rem;
+}
+.front-transform {
+  position: absolute;
+  top: -20px;
+  right: 120px;
+  width: 400px;
+  min-height: 100%;
+  padding-bottom: 40px;
+  background-image: url(../img/alexander-redl.jpg);
+  background-size: cover;
+  background-position: right center;
+  -webkit-clip-path: polygon(0% 0%, 30% 100%, 100% 100%, 70% 0%);
+  clip-path: polygon(0% 0%, 30% 100%, 100% 100%, 70% 0%);
+  -webkit-clip-path: url("#clip-section-header");
+  clip-path: url("#clip-section-header");
+}
 .products__list {
   list-style-type: none;
   display: flex;
   flex-flow: row;
-  padding: 0;
+  padding: 20px 0;
   margin: 0;
 }
 .products__item {
-  width: 200px;
-  height: 100px;
-  margin: 0 6px;
-  background-color: #db1f1f;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 180px;
+  margin: 0 10px;
+  padding-top: 4px;
+  border: 2px solid #f4f4f4;
+  box-sizing: border-box;
+}
+.product__img {
+  width: 100%;
+}
+.product__img:hover {
+  opacity: 0.8;
+}
+.product__link {
+  display: flex;
+  align-items: center;
+}
+.product__descr {
+  font-size: 0.8em;
+  padding: 6px 10px;
+}
+.product__buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.product__price {
+  flex: 50%;
+  border: 1px solid #f4f4f4;
+  padding: 10px;
+}
+.product__view-link {
+  display: inline-block;
+  flex: 50%;
+  border: 1px solid #f4f4f4;
+  padding: 10px;
+  text-decoration: none;
+  color: #d4554a;
+}
+.product__view-link:hover {
+  color: #fff;
+  background-color: #d4554a;
+}
+.bullet__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.bullet__item {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #d4554a;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.bullet__item_active,
+.bullet__item:hover {
+  background-color: #d4554a;
+}
+.products__browseall {
+  border: 2px solid #f4f4f4;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding: 10px 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.products__browseall:hover {
+  background-color: #d4554a;
+  color: #fff;
+  border-color: #d4554a;
+}
+.review-img {
+  height: 320px;
+  -webkit-clip-path: polygon();
+  clip-path: polygon();
+  -webkit-clip-path: url("#clip-review");
+  clip-path: url("#clip-review");
+}
+.review-text {
+  position: relative;
+  left: -80px;
+}
+.footer-h_light {
+  letter-spacing: 0.2em;
+  font-family: 'PT Serif', serif;
+  font-size: 1.4em;
+}
+.footer-h_medium {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px;
+}
+.footer-h_large {
+  font-size: 8em;
+  font-weight: bold;
 }
