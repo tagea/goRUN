@@ -1,5 +1,5 @@
 # Одностраничный сайт goRUN
 
-Работа с svg и clip-path
+Графика построена на svg и clip-path, в футере используются составные изображения.
 
-доступен по ссылке https://tagea.github.io/goRUN/
+Web версия https://tagea.github.io/goRUN/
